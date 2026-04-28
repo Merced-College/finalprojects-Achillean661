@@ -1,3 +1,11 @@
+/*
+Author: Ryan Lee
+Class: Portfolio.java
+
+Description:
+Handles the transactions for when a player buys or sells.
+*/
+
 public class Transactions {
     private String type; // "BUY" or "SELL"
     private String ticker;
@@ -5,7 +13,7 @@ public class Transactions {
     private double price;
     private double totalAmount;
 
-    // Default constructor
+    // Default Constructor
     public Transactions(String type, String ticker, int quantity, double price) {
         this.type = type;
         this.ticker = ticker;
@@ -14,12 +22,26 @@ public class Transactions {
         this.totalAmount = quantity * price;
     }
 
-    // Getters
-    public String getType() { return type; }
-    public String getTicker() { return ticker; }
-    public int getQuantity() { return quantity; }
-    public double getPrice() { return price; }
-    public double getTotalAmount() { return totalAmount; }
+    // Setters and Getters
+    public String getType() {
+        return type;
+    }
+
+    public String getTicker() {
+        return ticker;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public double getTotalAmount() {
+        return totalAmount;
+    }
 
     @Override
     public String toString() {
